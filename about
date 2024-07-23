@@ -1,0 +1,10 @@
+his component will manage a single cache instance used to store and retrieve objects efficiently. 
+A cache manager is a good candidate for a singleton because you want a single, 
+shared cache across the entire application to ensure consistency and avoid redundant data storage.
+
+***Single Cache Instance: Ensures that there is a single, consistent cache across the application,
+which avoids duplication and ensures all parts of the application are working with the same cached data.
+_____________
+In this implementation, the CacheManager class uses a private constructor to initialize a cache (using a HashMap),
+and provides methods to add, retrieve, remove, and clear cache entries. 
+The getInstance method ensures that only one instance of the CacheManager is created and provides global access to that instanc
